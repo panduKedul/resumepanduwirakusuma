@@ -36,13 +36,12 @@ export default function Navbar() {
           PW<span className="text-zinc-500">.</span>
         </a>
         <div className="hidden md:flex gap-4 text-sm font-mono uppercase tracking-wider">
-          {LINKS.map(([label, id], i) => (
+          {LINKS.map(([label, id]) => (
             <a
               key={id}
               href={`#${id}`}
               className="text-zinc-400 hover:text-amber-300"
             >
-              <span className="text-zinc-600 mr-1">0{i + 1}</span>
               {label}
             </a>
           ))}

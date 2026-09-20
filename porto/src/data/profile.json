@@ -7,13 +7,28 @@
       "Project Manager",
       "UI/UX Designer"
     ],
-    "tagline": "Hybrid professional — connect engineering, design, strategy jadi satu cara berpikir.",
+    "tagline": "Menjembatani teknik, desain, dan strategi bisnis untuk menciptakan produk yang impactful.",
     "phone": "(62) 812-3900-2650",
-    "emails": ["panduwirak@gmail.com", "Muhammadpandu@telkomuniversity.ac.id"],
-    "jobstreet": "id.jobstreet.com/profiles/pandu-wirakusuma-3dfTxz9x74"
+    "emails": [
+      "pandusnowway@gmail.com",
+      "panduwirak@gmail.com",
+      "muhammadpandu@telkomuniversity.ac.id"
+    ],
+    "jobstreet": "id.jobstreet.com/profiles/pandu-wirakusuma-3dfTxz9x74",
+    "emailLabels": {
+      "pandusnowway@gmail.com": "utama",
+      "muhammadpandu@telkomuniversity.ac.id": "academic only"
+    }
   },
-  "about": "Halo, saya Pandu — profesional hybrid yang menghubungkan engineering, desain, dan strategi dalam satu cara berpikir kohesif. Dengan fondasi Telekomunikasi dan Teknik Elektro, saya menerjemahkan kompleksitas teknis jadi solusi human-centered — baik saat bangun relasi sebagai sales engineer, bentuk pengalaman sebagai UI designer, atau pimpin inisiatif sebagai project manager. Saya energized oleh kolaborasi, systems thinking, dan meaningful impact. Nyaman navigasi antara logika dan kreativitas, bawa struktur ke ide tanpa matikan inovasi. Menuju jalur manajemen, misi saya: empower tim, align visi, ciptakan karya smart dan memorable.",
-  "keywords": ["systems thinking", "kolaborasi", "logic x creativity", "team empowerment"],
+  "about": "Halo, saya Pandu. Saya menjembatani engineering, desain, dan strategi untuk menciptakan solusi yang relevan dan bernilai tinggi. Dengan fondasi teknik elektro dan telekomunikasi, saya menghubungkan titik temu antara kode, estetika, dan kebutuhan bisnis — baik saat meyakinkan klien sebagai sales engineer, merancang pengalaman sebagai desainer, maupun memimpin proyek hingga tuntas. Saya percaya ide hebat butuh sistem yang matang agar bisa berdampak nyata. Kini dalam perjalanan menuju manajemen tim, fokus saya adalah memimpin dengan empati, menyatukan visi, dan mengeksekusi inovasi secara terukur.",
+  "keywords": [
+    "Negosiasi & Presentasi Solusi",
+    "Perencanaan Sprint & Agile Delivery",
+    "Manajemen Stakeholder",
+    "User Research & Usability Testing",
+    "Wireframing & Prototyping",
+    "Information Architecture"
+  ],
   "education": [
     {
       "level": "S1",
@@ -33,6 +48,12 @@
     }
   ],
   "experience": [
+    {
+      "role": "Lecturer S1 Teknik Telekomunikasi",
+      "org": "Telkom University Jakarta",
+      "period": "2026 – Sekarang",
+      "desc": "Mengampu mata kuliah S1 Teknik Telekomunikasi (probabilitas & statistika, variabel kompleks, persamaan diferensial); menyusun RPS, kontrak kuliah, dan materi bilingual; membimbing mahasiswa serta mengembangkan riset terapan di bidang telekomunikasi dan data."
+    },
     {
       "org": "PT. Mukti Rejo Abadi",
       "location": "Jakarta Timur",
@@ -105,70 +126,95 @@
       "year": 2021,
       "title": "DigiTelco: Information Portal for Telecommunications Engineering Students",
       "role": "UI/UX Designer + Logo Designer",
-      "tags": ["UI/UX"],
+      "tags": [
+        "UI/UX"
+      ],
       "desc": "Portal info mahasiswa Tektel ala Facebook: news, update, resource. Logo dan visual identity dari konsep hingga vektor final dengan bahasa visual kohesif. User research dan usability testing end-to-end, iterasi wireframe/prototype, IA untuk discoverability."
     },
     {
       "year": 2022,
       "title": "Design Packaging (PT. Mukti Rejo Abadi)",
       "role": "Product Designer",
-      "tags": ["Packaging"],
+      "tags": [
+        "Packaging"
+      ],
       "desc": "End-to-end packaging masker, apron, syringe. Layout steril dan comply standar label medis, brand kohesif. Konsep hingga print-ready, fokus durability dan hierarchy info. Optimasi visual asset e-commerce."
     },
     {
       "year": 2022,
       "title": "Voting-Q: Innovative Digital Voting Platform",
       "role": "Negotiator + UI Designer",
-      "tags": ["UI/UX", "Negotiation/PM"],
+      "tags": [
+        "UI/UX",
+        "Negotiation/PM"
+      ],
       "desc": "Platform voting efisien, secure, accessible. Lead cross-functional team, secure partnership, manage timeline/resource, jaga data security. UI modern inklusif, responsive multi-device. Backend secure ke frontend seamless. Hi-fi prototype dan design review."
     },
     {
       "year": 2022,
       "title": "NPK Information Website",
       "role": "Negotiator + UI/IA",
-      "tags": ["UI/UX", "Negotiation/PM"],
+      "tags": [
+        "UI/UX",
+        "Negotiation/PM"
+      ],
       "desc": "Hub info NPK (data agrikultur kompleks menjadi format digestible). Contract scoping, stakeholder bridge. Wireframe hi-fi dan prototype interaktif, visual identity kohesif, hierarchy data-heavy."
     },
     {
       "year": 2022,
       "title": "3D Video Presentation (ISRSI, klien Pertamina)",
       "role": "3D Designer",
-      "tags": ["3D/Motion"],
+      "tags": [
+        "3D/Motion"
+      ],
       "desc": "Produk media 3D: procedural video dan ads korporat. Tool: Adobe After Effects. 3D motion graphics untuk proses industrial kompleks. End-to-end: konsep 3D model hingga post-produksi. Storytelling visual promo dan instruksional (energy & IT)."
     },
     {
       "year": 2023,
       "title": "Warehouse Inventory Website (Internal)",
       "role": "Negotiator + Admin Kontrak",
-      "tags": ["Negotiation/PM"],
+      "tags": [
+        "Negotiation/PM"
+      ],
       "desc": "Sistem inventory private high-security. Procurement negotiation, cross-func collab (dev x warehouse). MoU dan kontrak end-to-end, compliance governance, bridge legal/finance/teknis."
     },
     {
       "year": 2024,
       "title": "Perguruan Cikini Company Profile Website",
       "role": "Negotiator + UI/UX",
-      "tags": ["UI/UX", "Negotiation/PM"],
+      "tags": [
+        "UI/UX",
+        "Negotiation/PM"
+      ],
       "desc": "Company profile sekolah. Align visi institusi x eksekusi teknis, scope/timeline/deliverable, branding guideline. UI/UX end-to-end buat siswa/orang tua/stakeholder. Responsive dan hi-fi prototype. Modern tapi hormati heritage edukasi."
     },
     {
       "year": 2025,
       "title": "Academic Administrative & Correspondence System — Universitas Bengkulu",
       "role": "Negotiator + UI/UX",
-      "tags": ["UI/UX", "Negotiation/PM"],
+      "tags": [
+        "UI/UX",
+        "Negotiation/PM"
+      ],
       "desc": "Digitalisasi surat paper-based menjadi tracking, approval, archiving secure. Workshop requirement, atasi bottleneck admin, kontrak sesuai standar regulasi kampus. UX buat staff/dosen/mahasiswa (adopsi tinggi). Dashboard modern dan branding UNIB. Prototype validasi routing logic kompleks."
     },
     {
       "year": 2025,
       "title": "Wave Prediction Application (klien internasional)",
       "role": "Team Leader + Frontend",
-      "tags": ["ML/Frontend"],
+      "tags": [
+        "ML/Frontend"
+      ],
       "desc": "App prediksi gelombang, data forecasting menjadi visual user-centric. Stakeholder cross-border. Frontend: Framer, responsive, real-time visualization, auto-deploy sehingga time-to-prod cepat."
     },
     {
       "year": 2025,
       "title": "Phinisi Boat Custom Website Project",
       "role": "Project Lead + B2B Partnership",
-      "tags": ["UI/UX", "Negotiation/PM"],
+      "tags": [
+        "UI/UX",
+        "Negotiation/PM"
+      ],
       "desc": "Web bespoke buat luxury boat buyer, collab galangan Phinisi. Tiap kapal menjadi identitas digital sendiri. Onboarding digital end-to-end, liaison shipyard x owner. UI/UX premium, gallery teknis, fitur vessel, booking/inquiry system. Marketing tool pasar internasional."
     }
   ],
@@ -178,7 +224,9 @@
       "title": "LoRa Patch Antenna + COTS Receiver Module for Disaster Mitigation M2M Communications",
       "role": "Lead Researcher & Competitor",
       "event": "IEEE MTT-Sat Challenge, Nano Satellite Lab",
-      "models": ["SolidWorks 2019"],
+      "models": [
+        "SolidWorks 2019"
+      ],
       "metrics": "IEEE MTT-Sat",
       "desc": "LoRa dan COTS buat M2M efisien di area rawan bencana. Reliable, cost-effective, real-time monitoring. Tool: SolidWorks 2019."
     },
@@ -186,7 +234,9 @@
       "year": 2023,
       "title": "Nighttime Livestock Motion Detection via Depth-Sensing Digital Imaging (Skripsi S1)",
       "role": "Lead Researcher (Thesis)",
-      "models": ["YOLO V3"],
+      "models": [
+        "YOLO V3"
+      ],
       "metrics": "76.15%",
       "desc": "Frame Difference algorithm, akurasi 76.15%. Remote monitor: sleep, feeding, health."
     },
@@ -195,7 +245,11 @@
       "title": "Ensemble ML Voting Classifier for TB Detection via Chest X-ray (Imbalanced Dataset)",
       "role": "Lead Researcher",
       "event": "SDS Lab, 4200 data",
-      "models": ["SVM", "Random Forest", "Ensemble Voting"],
+      "models": [
+        "SVM",
+        "Random Forest",
+        "Ensemble Voting"
+      ],
       "metrics": "99.1% acc, 99.3% AUC, 99% recall, 98% precision, 98% F1",
       "desc": "SDS Lab dengan 4200 data. SVM + Random Forest + Ensemble Voting. Robust atasi imbalance dataset."
     },
@@ -203,7 +257,10 @@
       "year": 2024,
       "title": "Sentiment Analysis Komentar Digital Banking Apps (Internal Research, SDS Lab)",
       "role": "Researcher",
-      "models": ["Naive Bayes", "Logistic Regression"],
+      "models": [
+        "Naive Bayes",
+        "Logistic Regression"
+      ],
       "metrics": "5 banks",
       "desc": "Analisis 5 bank terkemuka. Insight kepuasan pelanggan dan improvement area."
     },
@@ -211,20 +268,66 @@
       "year": 2025,
       "title": "Deep Learning Prediction Harga Bawang Merah buat Policy Pemerintah (Tesis S2)",
       "role": "Lead Researcher (Thesis)",
-      "models": ["ARIMA", "SARIMA", "Prophet", "SARIMAX", "LSTM"],
+      "models": [
+        "ARIMA",
+        "SARIMA",
+        "Prophet",
+        "SARIMAX",
+        "LSTM"
+      ],
       "metrics": "Tesis S2",
       "desc": "Prediksi volatilitas pasar menjadi insight stabilisasi harga dan food security. Model: ARIMA, SARIMA, Prophet (univariate), SARIMAX, LSTM (multivariate). Bridge neural net x perencanaan ekonomi strategis."
     }
   ],
   "skills": {
-    "engineering": ["Telekomunikasi", "Signal Processing", "ADCS", "LoRa", "Antenna (SolidWorks)", "IoT/Sensor", "YOLO V3", "SVM/Random Forest/Voting", "Naive Bayes/LogReg", "ARIMA/SARIMA/Prophet/SARIMAX/LSTM"],
-    "design": ["UI/UX (wireframe, prototype hi-fi, usability testing, IA)", "Logo/Brand Identity", "Packaging", "Sosmed visual", "Fotografi", "3D/Motion (After Effects)", "Framer"],
-    "pm_sales": ["Negotiation", "Scoping", "Sprint planning", "Stakeholder mgmt", "MoU/kontrak", "Cross-func coordination", "Bottleneck solving"],
-    "tools": ["Framer", "Adobe After Effects", "SolidWorks 2019", "Figma"]
+    "engineering": [
+      "Telekomunikasi",
+      "Signal Processing",
+      "ADCS",
+      "LoRa",
+      "Antenna (SolidWorks)",
+      "IoT/Sensor",
+      "YOLO V3",
+      "SVM/Random Forest/Voting",
+      "Naive Bayes/LogReg",
+      "ARIMA/SARIMA/Prophet/SARIMAX/LSTM"
+    ],
+    "design": [
+      "UI/UX (wireframe, prototype hi-fi, usability testing, IA)",
+      "Logo/Brand Identity",
+      "Packaging",
+      "Sosmed visual",
+      "Fotografi",
+      "3D/Motion (After Effects)",
+      "Framer"
+    ],
+    "pm_sales": [
+      "Negotiation",
+      "Scoping",
+      "Sprint planning",
+      "Stakeholder mgmt",
+      "MoU/kontrak",
+      "Cross-func coordination",
+      "Bottleneck solving"
+    ],
+    "tools": [
+      "Framer",
+      "Adobe After Effects",
+      "SolidWorks 2019",
+      "Figma"
+    ]
   },
   "contact": {
     "phone": "(62) 812-3900-2650",
-    "emails": ["panduwirak@gmail.com", "Muhammadpandu@telkomuniversity.ac.id"],
-    "jobstreet": "id.jobstreet.com/profiles/pandu-wirakusuma-3dfTxz9x74"
+    "emails": [
+      "pandusnowway@gmail.com",
+      "panduwirak@gmail.com",
+      "muhammadpandu@telkomuniversity.ac.id"
+    ],
+    "jobstreet": "id.jobstreet.com/profiles/pandu-wirakusuma-3dfTxz9x74",
+    "emailLabels": {
+      "pandusnowway@gmail.com": "utama",
+      "muhammadpandu@telkomuniversity.ac.id": "academic only"
+    }
   }
 }

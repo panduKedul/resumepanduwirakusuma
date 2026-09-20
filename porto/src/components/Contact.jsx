@@ -75,6 +75,7 @@ export default function Contact() {
           {emails.map((e) => (
             <a key={e} href={`mailto:${e}`} className="hover:text-amber-300">
               {e}
+              {c.emailLabels?.[e] ? ` (${c.emailLabels[e]})` : ""}
             </a>
           ))}
           <a

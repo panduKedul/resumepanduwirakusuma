@@ -7,21 +7,22 @@
 - **Nama:** Muhammad Pandu Wirakusuma
 - **Role utama:** Lecturer S1 Teknik Telekomunikasi Tel-U Jakarta
 - **Role lain:** Sales Engineer, Project Manager & UI/UX Designer
-- **Tagline:** Hybrid professional — connect engineering, design, strategy jadi satu cara berpikir.
+- **Tagline:** Menjembatani teknik, desain, dan strategi bisnis untuk menciptakan produk yang impactful.
 - **Kontak:**
   - Telp/WA: (62) 812-3900-2650
+  - Email utama: pandusnowway@gmail.com
   - Email pribadi: panduwirak@gmail.com
-  - Email kampus: Muhammadpandu@telkomuniversity.ac.id
+  - Email kampus: muhammadpandu@telkomuniversity.ac.id (academic only)
   - Jobstreet: id.jobstreet.com/profiles/pandu-wirakusuma-3dfTxz9x74
 - **CTA hero:** [Lihat Proyek] [Hubungi Saya] [Download CV]
 
 ## 2. About Me (ID, terjemahan dari EN asli)
 
-> Halo, saya Pandu — profesional hybrid yang menghubungkan engineering, desain, dan strategi dalam satu cara berpikir kohesif. Dengan fondasi Telekomunikasi dan Teknik Elektro, saya menerjemahkan kompleksitas teknis jadi solusi human-centered — baik saat bangun relasi sebagai sales engineer, bentuk pengalaman sebagai UI designer, atau pimpin inisiatif sebagai project manager.
+> Halo, saya Pandu. Saya menjembatani engineering, desain, dan strategi untuk menciptakan solusi yang relevan dan bernilai tinggi.
 >
-> Saya energized oleh kolaborasi, systems thinking, dan meaningful impact. Nyaman navigasi antara logika dan kreativitas, bawa struktur ke ide tanpa matikan inovasi. Menuju jalur manajemen, misi saya: empower tim, align visi, ciptakan karya smart dan memorable.
+> Dengan fondasi teknik elektro dan telekomunikasi, saya menghubungkan titik temu antara kode, estetika, dan kebutuhan bisnis — baik saat meyakinkan klien sebagai sales engineer, merancang pengalaman sebagai desainer, maupun memimpin proyek hingga tuntas. Saya percaya ide hebat butuh sistem yang matang agar bisa berdampak nyata. Kini dalam perjalanan menuju manajemen tim, fokus saya adalah memimpin dengan empati, menyatukan visi, dan mengeksekusi inovasi secara terukur.
 
-- **Keywords:** systems thinking, kolaborasi, logic x creativity, team empowerment
+- **Keywords:** Negosiasi & Presentasi Solusi, Perencanaan Sprint & Agile Delivery, Manajemen Stakeholder, User Research & Usability Testing, Wireframing & Prototyping, Information Architecture
 - **Foto:** pakai foto slide 1-2 (crop portrait, background dark)
 
 ## 3. Pendidikan
@@ -41,6 +42,10 @@
 - Presentasi seminar nasional & internasional
 
 ## 4. Pengalaman Kerja
+
+### 4.0 Telkom University Jakarta | Lecturer S1 Teknik Telekomunikasi | 2026 – Sekarang
+- Mengampu mata kuliah S1 Teknik Telekomunikasi (probabilitas & statistika, variabel kompleks, persamaan diferensial).
+- Menyusun RPS, kontrak kuliah, dan materi bilingual; membimbing mahasiswa serta mengembangkan riset terapan di bidang telekomunikasi dan data.
 
 ### 4.1 PT. Mukti Rejo Abadi — Jakarta Timur | Product Designer | Jan 2022 – Jun 2022
 - Perusahaan alat kesehatan. Desain packaging produk + diskusi semua aspek produk.
