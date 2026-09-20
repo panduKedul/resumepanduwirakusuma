@@ -42,6 +42,13 @@ export default function Hero() {
           >
             Hubungi Saya
           </a>
+          <a
+            href="/CV-Muhammad-Pandu-Wirakusuma.pdf"
+            download="CV-Muhammad-Pandu-Wirakusuma.pdf"
+            className="px-6 py-3 bg-amber-300 text-black font-semibold text-sm hover:bg-amber-200 transition-colors"
+          >
+            Download CV ↓
+          </a>
         </div>
         <p className="mt-6 text-sm text-zinc-500 font-mono">
           {h.phone} •{" "}
