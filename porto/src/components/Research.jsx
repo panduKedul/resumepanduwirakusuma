@@ -21,11 +21,6 @@ export default function Research() {
             >
               <div className="flex items-center justify-between gap-2">
                 <span className="font-mono text-xs text-zinc-500">{r.year}</span>
-                {r.metrics && (
-                  <span className="text-5xl font-bold tabular-nums tracking-tight text-zinc-100">
-                    {r.metrics}
-                  </span>
-                )}
               </div>
               <h3 className="font-semibold leading-snug tracking-tight text-lg">{r.title}</h3>
               <p className="font-mono text-xs text-zinc-500 uppercase">

@@ -1,12 +1,19 @@
 import profile from "../data/profile.json";
 import DotCanvas from "./DotCanvas";
+import heroPhoto from "../assets/photo-hero.jpg";
 
 export default function Hero() {
   const h = profile.hero;
   return (
     <header className="relative min-h-screen flex items-center bg-black overflow-hidden">
       <DotCanvas />
-      <div className="max-w-6xl mx-auto px-4 pt-28 pb-20 w-full">
+      <div className="max-w-6xl mx-auto px-4 pt-28 pb-20 w-full flex flex-col md:flex-row items-center gap-10">
+        <img
+          src={heroPhoto}
+          alt="Muhammad Pandu Wirakusuma"
+          className="w-56 md:w-72 shrink-0 object-cover border border-white/15 order-first md:order-last"
+        />
+        <div className="flex-1">
         <p className="font-mono text-xs uppercase tracking-[0.3em] text-amber-300">
           ● Portfolio — 2026
         </p>
@@ -42,6 +49,7 @@ export default function Hero() {
             .map((e) => (h.emailLabels?.[e] ? `${e} (${h.emailLabels[e]})` : e))
             .join(" / ")}
         </p>
+        </div>
       </div>
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-zinc-500">
         <span className="font-mono text-[10px] uppercase tracking-[0.3em]">Scroll</span>
