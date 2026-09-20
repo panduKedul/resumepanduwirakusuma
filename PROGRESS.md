@@ -31,4 +31,10 @@
 
 ### State
 - Tests 6/6 PASS, build PASS, `main` sync `origin/main`, Netlify auto-deploy dari `main`.
-- TODO konten: screenshot asli gallery, link demo proyek, PDF thesis, domain final.
+- TODO konten: foto project 2-10 (belum disediakan user), link demo proyek, PDF thesis, domain final.
+
+### Revisi lanjutan
+12. Tombol Download CV (amber) di hero + PDF `public/CV-Muhammad-Pandu-Wirakusuma.pdf` (272KB).
+13. Hero cue scroll clearance (pb-32, bottom-2, pointer-events-none).
+14. Full English seluruh web (konten profile.json + semua UI strings). `Profile.md` tetap ID.
+15. Gallery rework: label `Project 1..10` (Screenshot dihapus), album per-project + lightbox carousel (panah, keyboard, swipe, counter, thumbnail). Project 1 DigiTelco terisi 8 foto (`public/gallery/digitelco/`); project lain "Photos coming soon".
