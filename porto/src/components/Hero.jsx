@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <header className="relative min-h-screen flex items-center bg-black overflow-hidden">
       <DotCanvas />
-      <div className="max-w-6xl mx-auto px-4 pt-28 pb-20 w-full flex flex-col md:flex-row items-center gap-10">
+      <div className="max-w-6xl mx-auto px-4 pt-28 pb-32 w-full flex flex-col md:flex-row items-center gap-10">
         <img
           src={heroPhoto}
           alt="Muhammad Pandu Wirakusuma"
@@ -58,7 +58,7 @@ export default function Hero() {
         </p>
         </div>
       </div>
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-zinc-500">
+      <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-zinc-500 pointer-events-none">
         <span className="font-mono text-[10px] uppercase tracking-[0.3em]">Scroll</span>
         <span className="block w-px h-10 bg-gradient-to-b from-amber-300 to-transparent animate-pulse" />
       </div>
