@@ -1,6 +1,6 @@
 import profile from "../data/profile.json";
 import DotCanvas from "./DotCanvas";
-import heroPhoto from "../assets/photo-hero.jpg";
+import heroPhoto from "../assets/photo-hero.webp";
 
 export default function Hero() {
   const h = profile.hero;
@@ -11,7 +11,7 @@ export default function Hero() {
         <img
           src={heroPhoto}
           alt="Muhammad Pandu Wirakusuma"
-          className="w-56 md:w-72 shrink-0 object-cover border border-white/15 order-first md:order-last"
+          className="w-56 md:w-72 shrink-0 object-cover order-first md:order-last"
         />
         <div className="flex-1">
         <p className="font-mono text-xs uppercase tracking-[0.3em] text-amber-300">
