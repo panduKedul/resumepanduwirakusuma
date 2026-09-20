@@ -1,0 +1,8 @@
+node_modules/
+porto/node_modules/
+porto/dist/
+dist/
+*.log
+.DS_Store
+Thumbs.db
+.superpowers/
