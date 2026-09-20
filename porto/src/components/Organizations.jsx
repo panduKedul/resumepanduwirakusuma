@@ -5,7 +5,7 @@ export default function Organizations() {
     <section className="bg-black border-t border-white/10">
       <div className="max-w-6xl mx-auto px-4 py-20">
         <p className="font-mono text-xs uppercase tracking-[0.3em] text-zinc-500">04 — Organizations</p>
-        <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tight mt-2">Organisasi</h2>
+        <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tight mt-2">Organizations</h2>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 mt-8">
           {profile.orgs.map((o) => (
             <div

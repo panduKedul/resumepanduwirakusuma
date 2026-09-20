@@ -34,13 +34,13 @@ export default function Hero() {
             href="#projects"
             className="px-6 py-3 bg-white text-black font-semibold text-sm hover:bg-amber-300 transition-colors"
           >
-            Lihat Projects ↓
+            View Projects ↓
           </a>
           <a
             href="#contact"
             className="px-6 py-3 border border-white/20 text-sm text-zinc-100 hover:border-amber-300 hover:text-amber-300 transition-colors"
           >
-            Hubungi Saya
+            Contact Me
           </a>
           <a
             href="/CV-Muhammad-Pandu-Wirakusuma.pdf"

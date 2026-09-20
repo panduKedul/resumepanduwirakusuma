@@ -7,7 +7,7 @@ export default function About() {
     <section className="bg-black">
       <div className="max-w-6xl mx-auto px-4 py-20">
         <p className="font-mono text-xs uppercase tracking-[0.3em] text-zinc-500">01 — About</p>
-        <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tight mt-2">Tentang</h2>
+        <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tight mt-2">About</h2>
         <div className="flex flex-col md:flex-row gap-8 items-start mt-6">
           <img
             src={aboutPhoto}

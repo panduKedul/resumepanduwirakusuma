@@ -38,7 +38,7 @@ export default function Projects() {
           />
         </div>
         <p className="text-sm text-zinc-500 mt-3 font-mono">
-          {filtered.length} dari {profile.projects.length} proyek
+          {filtered.length} of {profile.projects.length} projects
         </p>
         <div className="grid gap-4 sm:grid-cols-2 mt-4">
           {filtered.map((p) => (
@@ -61,13 +61,13 @@ export default function Projects() {
                 onClick={() => setSelected(p)}
                 className="mt-auto self-start px-4 py-1.5 bg-white text-black text-sm font-medium hover:bg-amber-300 transition-colors"
               >
-                Detail →
+                Details →
               </button>
             </article>
           ))}
         </div>
         {filtered.length === 0 && (
-          <p className="text-sm text-zinc-500 mt-4">Tidak ada proyek cocok filter.</p>
+          <p className="text-sm text-zinc-500 mt-4">No projects match the filter.</p>
         )}
         <Modal item={selected} onClose={() => setSelected(null)} />
       </div>

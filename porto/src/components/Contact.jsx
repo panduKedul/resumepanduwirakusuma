@@ -3,14 +3,14 @@ import profile from "../data/profile.json";
 export default function Contact() {
   const c = profile.contact ?? profile.hero;
   const emails = c.emails || [];
-  const mailto = emails[0] ? `mailto:${emails[0]}?subject=Kontak%20Portofolio` : "mailto:";
+  const mailto = emails[0] ? `mailto:${emails[0]}?subject=Portfolio%20Contact` : "mailto:";
   const waNumber = "6281239002650";
 
   return (
     <section className="bg-black border-t border-white/10">
       <div className="max-w-6xl mx-auto px-4 py-20">
         <p className="font-mono text-xs uppercase tracking-[0.3em] text-zinc-500">08 — Contact</p>
-        <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tight mt-2">Kontak</h2>
+        <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tight mt-2">Contact</h2>
         <form
           name="contact"
           method="POST"
@@ -21,16 +21,16 @@ export default function Contact() {
           <input type="hidden" name="form-name" value="contact" />
           <p className="hidden">
             <label>
-              Jangan isi: <input name="bot-field" />
+              Don't fill: <input name="bot-field" />
             </label>
           </p>
           <label className="text-sm flex flex-col gap-1">
-            Nama
+            Name
             <input
               name="name"
               required
               className="bg-black border border-white/10 px-3 py-2 text-sm focus:border-amber-300 outline-none"
-              placeholder="Nama kamu"
+              placeholder="Your name"
             />
           </label>
           <label className="text-sm flex flex-col gap-1">
@@ -44,13 +44,13 @@ export default function Contact() {
             />
           </label>
           <label className="text-sm flex flex-col gap-1">
-            Pesan
+            Message
             <textarea
               name="message"
               required
               rows="4"
               className="bg-black border border-white/10 px-3 py-2 text-sm focus:border-amber-300 outline-none"
-              placeholder="Halo Pandu, ..."
+              placeholder="Hi Pandu, ..."
             />
           </label>
           <div className="flex gap-2">
@@ -58,13 +58,13 @@ export default function Contact() {
               type="submit"
               className="px-4 py-1.5 bg-white text-black text-sm font-medium hover:bg-amber-300"
             >
-              Kirim →
+              Send →
             </button>
             <a
               href={mailto}
               className="px-4 py-1.5 border border-white/20 text-sm text-zinc-200 hover:border-amber-300 hover:text-amber-300"
             >
-              mailto fallback
+              Email me instead
             </a>
           </div>
         </form>

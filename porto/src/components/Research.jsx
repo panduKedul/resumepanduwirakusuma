@@ -37,7 +37,7 @@ export default function Research() {
                 onClick={() => setSelected(r)}
                 className="mt-auto self-start px-4 py-1.5 bg-white text-black text-sm font-medium hover:bg-amber-300 transition-colors"
               >
-                Detail →
+                Details →
               </button>
             </article>
           ))}

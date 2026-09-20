@@ -16,7 +16,7 @@ export default function Gallery() {
         <p className="font-mono text-xs uppercase tracking-[0.3em] text-zinc-500">07 — Gallery</p>
         <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tight mt-2">Gallery</h2>
         <p className="text-sm text-zinc-500 mt-3">
-          ganti screenshot asli — placeholder grid, klik buat lightbox.
+          Replace with real screenshots — placeholder grid, click for lightbox.
         </p>
         <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 mt-6">
           {PLACEHOLDERS.map((g) => (
@@ -43,7 +43,7 @@ export default function Gallery() {
               onClick={(e) => e.stopPropagation()}
             >
               <div className="aspect-video bg-white/[0.02] border border-white/10 flex items-center justify-center mb-4">
-                <span className="text-sm text-zinc-400">{selected.label} — ganti screenshot asli</span>
+                <span className="text-sm text-zinc-400">{selected.label} — replace with real screenshot</span>
               </div>
               <h3 className="font-semibold mb-1 tracking-tight">{selected.title}</h3>
               <p className="font-mono text-xs text-zinc-500 mb-4">{selected.caption}</p>
@@ -51,7 +51,7 @@ export default function Gallery() {
                 onClick={() => setSelected(null)}
                 className="px-4 py-1.5 bg-white text-black text-sm font-medium hover:bg-amber-300"
               >
-                Tutup
+                Close
               </button>
             </div>
           </div>

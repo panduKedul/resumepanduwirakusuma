@@ -20,7 +20,7 @@ export default function Modal({ item, onClose }) {
           onClick={onClose}
           className="px-3 py-1 rounded bg-amber-400 text-zinc-950 text-sm font-medium"
         >
-          Tutup
+          Close
         </button>
       </div>
     </div>
