@@ -8,11 +8,15 @@ import Projects from "./components/Projects";
 import Research from "./components/Research";
 import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
+import { MotionConfig } from "framer-motion";
 import useReveal from "./hooks/useReveal";
+import useLenis from "./hooks/useLenis";
 
 export default function App() {
   useReveal();
+  useLenis();
   return (
+    <MotionConfig reducedMotion="user">
     <div className="bg-black text-zinc-100 min-h-screen">
       <Navbar />
       <main>
@@ -27,5 +31,6 @@ export default function App() {
         <div id="contact" className="reveal"><Contact /></div>
       </main>
     </div>
+    </MotionConfig>
   );
 }

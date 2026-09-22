@@ -14,6 +14,7 @@ const LINKS = [
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [progress, setProgress] = useState(0);
+  const [active, setActive] = useState("hero");
 
   useEffect(() => {
     const onScroll = () => {
@@ -22,7 +23,23 @@ export default function Navbar() {
     };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+    const ids = ["about", "edu", "exp", "orgs", "projects", "research", "gallery", "contact"];
+    const obs = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) setActive(e.target.id);
+        });
+      },
+      { rootMargin: "-40% 0px -55% 0px" }
+    );
+    ids.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) obs.observe(el);
+    });
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      obs.disconnect();
+    };
   }, []);
 
   return (
@@ -40,7 +57,8 @@ export default function Navbar() {
             <a
               key={id}
               href={`#${id}`}
-              className="text-zinc-400 hover:text-amber-300"
+              aria-current={active === id ? "true" : undefined}
+              className={`cursor-pointer transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-amber-300 ${active === id ? "text-amber-300" : "text-zinc-400 hover:text-amber-300"}`}
             >
               {label}
             </a>
