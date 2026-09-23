@@ -6,3 +6,8 @@ dist/
 .DS_Store
 Thumbs.db
 .superpowers/
+.env
+.env.*
+!.env.example
+*.pem
+*.key

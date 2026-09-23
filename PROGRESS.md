@@ -75,3 +75,8 @@
 - Form: Netlify reCAPTCHA (`data-netlify-recaptcha`) + CSP buka `google.com/gstatic` secukupnya. Wajib enable di dashboard: Site settings → Forms → reCAPTCHA.
 - Diet payload: `photo-about.jpg` 166KB → `photo-about.webp` 640px 33KB (potong 80%) + `loading=lazy`; Gallery split chunk via `React.lazy` (awal 402→399KB); hapus aset mati (`hero.png`, `react.svg`, `vite.svg`, jpg lama).
 - Cloudflare (manual saat domain pasang): proxy on, Cache Everything aset, Bot Fight Mode, rate rule 100 req/10s/IP → Managed Challenge, Under Attack Mode saat insiden.
+
+### Credential audit (2026-09-23 sore)
+- Scan live + history: nol `.env`, nol `api_key|secret|password|PRIVATE|ghp_|sk-live|AKIA|token`, nol service ID. `dist/` ignored. Kunci reCAPTCHA di dashboard, bukan kode.
+- Fix: `.gitignore` blokir `.env*`/`*.pem`/`*.key`; hapus `porto/src/App.css` mati.
+- Verif: `vitest` 6/6 PASS, `vite build` PASS.
