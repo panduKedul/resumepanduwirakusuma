@@ -1,6 +1,6 @@
 import profile from "../data/profile.json";
 import Badge from "./Badge";
-import aboutPhoto from "../assets/photo-about.jpg";
+import aboutPhoto from "../assets/photo-about.webp";
 
 export default function About() {
   return (
@@ -12,6 +12,9 @@ export default function About() {
           <img
             src={aboutPhoto}
             alt="Muhammad Pandu Wirakusuma"
+            loading="lazy"
+            width="640"
+            height="1047"
             className="w-full md:w-72 shrink-0 object-cover border border-white/15"
           />
           <div className="flex-1">

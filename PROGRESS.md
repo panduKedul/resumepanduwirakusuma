@@ -62,3 +62,16 @@
 
 ### State
 - `origin/main` = `bfd8fae`. Tree: `PROGRESS.md` modified (log ini), untracked `Foto/`, CV pdf (belum di-push, perlu keputusan user).
+
+## 2026-09-23
+
+### Security hardening + pentest
+- Audit attack surface `porto/`: nol `dangerouslySetInnerHTML`/`eval`, React escape default, `npm audit` 0 vuln, nol sourcemap di `dist/`, `_redirects` SPA saja (nol open redirect).
+- Celah tutup: security headers di `netlify.toml` root + `porto/` (DENY frame, nosniff, referrer strict, Permissions-Policy kosong, HSTS, COOP/COEP same-origin, CSP ketat); `Contact.jsx` tabnabbing → `rel="noopener noreferrer"` + `safeExternalUrl()` allowlist jobstreet; `useLenis.js` guard `closest` + validasi id anchor; form `maxLength` + `autoComplete`; `index.html` title/meta/referrer/theme; `framer-motion` 13.4.0→13.4.1.
+- Verif: `vitest` 6/6 PASS, `npm run build` PASS.
+
+### Anti-DDoS prep
+- Cache headers: `/assets/*` immutable 1 thn, `/gallery/*` + `/*.pdf` + favicon 7 hari–1 thn.
+- Form: Netlify reCAPTCHA (`data-netlify-recaptcha`) + CSP buka `google.com/gstatic` secukupnya. Wajib enable di dashboard: Site settings → Forms → reCAPTCHA.
+- Diet payload: `photo-about.jpg` 166KB → `photo-about.webp` 640px 33KB (potong 80%) + `loading=lazy`; Gallery split chunk via `React.lazy` (awal 402→399KB); hapus aset mati (`hero.png`, `react.svg`, `vite.svg`, jpg lama).
+- Cloudflare (manual saat domain pasang): proxy on, Cache Everything aset, Bot Fight Mode, rate rule 100 req/10s/IP → Managed Challenge, Under Attack Mode saat insiden.

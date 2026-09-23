@@ -23,10 +23,14 @@ export default function useLenis() {
       return undefined;
     }
     const onClick = (e) => {
-      const a = e.target.closest('a[href^="#"]');
+      const target = e.target;
+      if (!target || typeof target.closest !== "function") return;
+      const a = target.closest('a[href^="#"]');
       if (!a) return;
-      const id = a.getAttribute("href").slice(1);
-      if (!id) return;
+      const raw = a.getAttribute("href");
+      if (!raw || raw.length > 100) return;
+      const id = raw.slice(1);
+      if (!id || !/^[A-Za-z0-9_-]+$/.test(id)) return;
       const el = document.getElementById(id);
       if (!el || !window.__lenis) return;
       e.preventDefault();

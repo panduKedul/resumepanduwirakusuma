@@ -1,10 +1,21 @@
 import profile from "../data/profile.json";
 
+const WA_NUMBER = "6281239002650";
+const JOBSTREET_ALLOW = /^[a-z0-9.-]+\.[a-z]{2,}(\/[a-zA-Z0-9._~:/?#[\]@!$&'()*+,;=-]*)?$/;
+
+function safeExternalUrl(host) {
+  if (typeof host !== "string" || host.length > 200) return null;
+  const h = host.trim().replace(/^https?:\/\//i, "");
+  if (!JOBSTREET_ALLOW.test(h)) return null;
+  if (/^(javascript|data|vbscript|file):/i.test(h)) return null;
+  return `https://${h}`;
+}
+
 export default function Contact() {
   const c = profile.contact ?? profile.hero;
   const emails = c.emails || [];
   const mailto = emails[0] ? `mailto:${emails[0]}?subject=Portfolio%20Contact` : "mailto:";
-  const waNumber = "6281239002650";
+  const jobstreetUrl = safeExternalUrl(c.jobstreet);
 
   return (
     <section className="bg-black border-t border-white/10">
@@ -15,6 +26,7 @@ export default function Contact() {
           name="contact"
           method="POST"
           data-netlify="true"
+          data-netlify-recaptcha="true"
           netlify-honeypot="bot-field"
           className="dot-card bg-white/[0.02] border border-white/10 p-5 flex flex-col gap-3 max-w-lg mt-8"
         >
@@ -29,6 +41,8 @@ export default function Contact() {
             <input
               name="name"
               required
+              maxLength={100}
+              autoComplete="name"
               className="bg-black border border-white/10 px-3 py-2 text-sm focus:border-amber-300 outline-none"
               placeholder="Your name"
             />
@@ -39,6 +53,9 @@ export default function Contact() {
               name="email"
               type="email"
               required
+              maxLength={254}
+              autoComplete="email"
+              inputMode="email"
               className="bg-black border border-white/10 px-3 py-2 text-sm focus:border-amber-300 outline-none"
               placeholder="email@contoh.com"
             />
@@ -49,10 +66,12 @@ export default function Contact() {
               name="message"
               required
               rows="4"
+              maxLength={2000}
               className="bg-black border border-white/10 px-3 py-2 text-sm focus:border-amber-300 outline-none"
               placeholder="Hi Pandu, ..."
             />
           </label>
+          <div data-netlify-recaptcha="true"></div>
           <div className="flex gap-2">
             <button
               type="submit"
@@ -69,7 +88,7 @@ export default function Contact() {
           </div>
         </form>
         <footer className="mt-8 text-sm text-zinc-400 flex flex-col gap-1 font-mono">
-          <a href={`https://wa.me/${waNumber}`} className="hover:text-amber-300">
+          <a href={`https://wa.me/${WA_NUMBER}`} target="_blank" rel="noopener noreferrer" className="hover:text-amber-300">
             WA 0812-3900-2650
           </a>
           {emails.map((e) => (
@@ -78,14 +97,16 @@ export default function Contact() {
               {c.emailLabels?.[e] ? ` (${c.emailLabels[e]})` : ""}
             </a>
           ))}
-          <a
-            href={`https://${c.jobstreet}`}
-            target="_blank"
-            rel="noreferrer"
-            className="text-zinc-500 hover:text-amber-300"
-          >
-            Jobstreet: {c.jobstreet}
-          </a>
+          {jobstreetUrl && (
+            <a
+              href={jobstreetUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-zinc-500 hover:text-amber-300"
+            >
+              Jobstreet: {c.jobstreet}
+            </a>
+          )}
         </footer>
       </div>
     </section>

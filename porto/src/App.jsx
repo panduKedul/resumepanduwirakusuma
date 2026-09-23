@@ -1,3 +1,4 @@
+import { Suspense, lazy } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -6,11 +7,13 @@ import Experience from "./components/Experience";
 import Organizations from "./components/Organizations";
 import Projects from "./components/Projects";
 import Research from "./components/Research";
-import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
 import { MotionConfig } from "framer-motion";
 import useReveal from "./hooks/useReveal";
 import useLenis from "./hooks/useLenis";
+
+// Below-fold heavy chunk (carousel + photos) split agar payload awal kecil = DDoS cost naik.
+const Gallery = lazy(() => import("./components/Gallery"));
 
 export default function App() {
   useReveal();
@@ -27,7 +30,7 @@ export default function App() {
         <div id="orgs" className="reveal"><Organizations /></div>
         <div id="projects" className="reveal"><Projects /></div>
         <div id="research" className="reveal"><Research /></div>
-        <div id="gallery" className="reveal"><Gallery /></div>
+        <div id="gallery" className="reveal"><Suspense fallback={<div className="max-w-6xl mx-auto px-4 py-20 text-sm text-zinc-500 font-mono">Loading gallery…</div>}><Gallery /></Suspense></div>
         <div id="contact" className="reveal"><Contact /></div>
       </main>
     </div>
